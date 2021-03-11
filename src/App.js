@@ -11,11 +11,9 @@ function App() {
   function Ismath(input)
   {
     if(math.includes(input))
-    {
-      return true;
-    }
-    else{
-      return false;
+      return true
+    else
+      return false
   }
   function handleClick(e) {
     if(result.length>1 && (Ismath(result.substr(-1))) && Ismath(e.target.name))
@@ -38,7 +36,7 @@ function App() {
     try {
       setResult(eval(result).toString());
     } catch (error) {
-      setResult("error");
+      setResult("Error");
     }
   }
 
